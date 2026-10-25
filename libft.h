@@ -6,17 +6,18 @@
 /*   By: yoograme <yoograme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 09:14:50 by yoograme          #+#    #+#             */
-/*   Updated: 2026/10/24 10:54:17 by yoograme         ###   ########.fr       */
+/*   Updated: 2026/10/25 10:53:02 by yoograme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# include <fcntl.h>
 # include <stddef.h>
+# include <stdint.h>
 # include <stdlib.h>
-#include <fcntl.h>
-#include <unistd.h>
-#include <stdint.h>
+# include <unistd.h>
+
 int					ft_isalnum(int c);
 int					ft_isdigit(int c);
 int					ft_isalpha(int c);

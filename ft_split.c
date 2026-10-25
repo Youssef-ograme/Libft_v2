@@ -6,11 +6,21 @@
 /*   By: yoograme <yoograme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 16:49:44 by yoograme          #+#    #+#             */
-/*   Updated: 2026/10/24 09:52:39 by yoograme         ###   ########.fr       */
+/*   Updated: 2026/10/25 11:32:02 by yoograme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
- #include "libft.h"
+#include "libft.h"
+
+static size_t	ft_strlen_2(const char *s, char c)
+{
+	size_t	i;
+
+	i = 0;
+	while (s[i] && s[i] != c)
+		i++;
+	return (i);
+}
 
 static size_t	ft_word_count(const char *s, char c)
 {
@@ -66,14 +76,14 @@ static void	*ft_free_tab(char **tab, size_t j)
 char	**ft_split(char const *s, char c)
 {
 	char	**result;
-	size_t	words_count;
 	size_t	i;
 	size_t	j;
+	size_t	words_count;
 
 	if (!s)
 		return (NULL);
 	words_count = ft_word_count(s, c);
-	result = (char **)malloc(sizeof(char *) * (words_count + 1));
+	result = malloc(sizeof(char *) * (words_count + 1));
 	if (!result)
 		return (NULL);
 	i = 0;
@@ -85,8 +95,7 @@ char	**ft_split(char const *s, char c)
 		result[j] = ft_word_dup(&s[i], c);
 		if (!result[j])
 			return (ft_free_tab(result, j));
-		while (s[i] && s[i] != c)
-			i++;
+		i += ft_strlen_2(&s[i], c);
 		j++;
 	}
 	result[j] = NULL;
@@ -106,7 +115,6 @@ char	**ft_split(char const *s, char c)
 //         free(res[i++]);
 //     free (res);
 // }
-
 
 /*
 #include "libft.h"
@@ -145,9 +153,9 @@ static int	len_world(const char *str, char c)
 	int	i;
 	int	count;
 	int	new_world;
-	
+
 	if (!str)
-        return (0);
+		return (0);
 	new_world = 1;
 	count = 0;
 	i = 0;
@@ -179,7 +187,7 @@ char	**ft_split(char const *s, char c)
 	int		i;
 
 	if (!s)
-        return (NULL);
+		return (NULL);
 	i = 0;
 	k = 0;
 	stack = malloc((len_world(s, c) + 1) * sizeof(char *));

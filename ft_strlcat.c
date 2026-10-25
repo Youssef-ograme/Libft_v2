@@ -30,18 +30,20 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		dst[len_dest + i] = src[i];
 		i++;
 	}
-	
 	dst[len_dest + i] = '\0';
 	return (len_dest + len_src);
 }
 
 /*
 #include <stdio.h>
+
 int	main(void)
 {
-	char src[] = "brother";
-	char dest[10] = "hello";
-	int res = ft_strlcat(dest, src, 8);
+	char	src[] = "brother";
+	char	dest[10] = "hello";
+	int		res;
+
+	res = ft_strlcat(dest, src, 8);
 	printf("%s , %d", dest, res);
 }
 */

@@ -6,7 +6,7 @@
 /*   By: yoograme <yoograme@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 16:48:27 by yoograme          #+#    #+#             */
-/*   Updated: 2026/10/24 10:26:32 by yoograme         ###   ########.fr       */
+/*   Updated: 2026/10/25 11:32:54 by yoograme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,13 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	s = (const unsigned char *)src;
 	i = 0;
 	if (s > d)
+	{
 		while (i < n)
 		{
 			d[i] = s[i];
 			i++;
 		}
+	}
 	else
 		while (n--)
 			d[n] = s[n];

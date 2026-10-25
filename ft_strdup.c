@@ -17,7 +17,7 @@ char	*ft_strdup(const char *s)
 	size_t	size;
 	size_t	i;
 	char	*ptr;
-	
+
 	if (!s)
 		return (NULL);
 	size = ft_strlen(s);
@@ -37,9 +37,11 @@ char	*ft_strdup(const char *s)
 /*#include <stdio.h>
 int main ()
 {
-    char str[] = "hello";
-    char *ptr = ft_strdup(NULL);
-    printf("%s",ptr);
-    free(ptr);
+	char	str[] = "hello";
+	char	*ptr;
+
+	ptr = ft_strdup(NULL);
+	printf("%s",ptr);
+	free(ptr);
 }
 */
