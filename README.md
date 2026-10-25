@@ -72,8 +72,12 @@ These functions are not in the libc, or are written in a different form.
 ## Resources
 
 - `man` pages (`man 3 strlcpy`, `man 3 memmove`, etc.)
-- *The C Programming Language*, Kernighan & Ritchie
-- The 42 Norm and the Libft subject
+- [GNU C Library manual](https://www.gnu.org/software/libc/manual/)
+- [codebrowser](https://codebrowser.dev/glibc)
+- [Linux man pages](https://man7.org/linux/man-pages/)
+- [geeksforgeeks](https://www.geeksforgeeks.org)
+- [open-std.org](https://www.open-std.org/jtc1/sc22/wg14/www/projects#9899)
+- [cppreference](https://en.cppreference.com/)
 
 ### AI usage
 
