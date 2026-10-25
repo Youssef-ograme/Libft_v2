@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoograme <yoograme@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yoograme <yoograme@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 09:13:51 by yoograme          #+#    #+#             */
-/*   Updated: 2026/10/22 17:22:22 by yoograme         ###   ########.fr       */
+/*   Updated: 2026/10/25 16:17:08 by yoograme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,3 @@ int	ft_isalpha(int c)
 		return (0);
 	return (1);
 }
-
-// #include <stdio.h>
-// int main ()
-// {
-//     printf ("%d",ft_isalpha('7'));
-// }

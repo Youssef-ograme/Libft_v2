@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoograme <yoograme@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yoograme <yoograme@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 16:48:27 by yoograme          #+#    #+#             */
-/*   Updated: 2026/10/25 11:32:54 by yoograme         ###   ########.fr       */
+/*   Updated: 2026/10/25 16:18:13 by yoograme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,16 +38,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 			d[n] = s[n];
 	return (dest);
 }
-// void test (char *str1)
-// {
-//     printf("%c",str1[0]);
-// }
-
-// int	main(void)
-// {
-// 	char str[] = "hello";
-// 	char src[] = "bro";
-// 	ft_memmove(str, str, 3);
-// 	printf("%s", str);
-// 	return (0);
-// }

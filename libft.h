@@ -3,18 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoograme <yoograme@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yoograme <yoograme@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 09:14:50 by yoograme          #+#    #+#             */
-/*   Updated: 2026/10/25 10:53:02 by yoograme         ###   ########.fr       */
+/*   Updated: 2026/10/25 16:18:47 by yoograme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-# include <fcntl.h>
-# include <stddef.h>
-# include <stdint.h>
+
 # include <stdlib.h>
 # include <unistd.h>
 

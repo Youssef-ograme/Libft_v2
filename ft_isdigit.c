@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoograme <yoograme@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yoograme <yoograme@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 09:14:39 by yoograme          #+#    #+#             */
-/*   Updated: 2026/10/22 17:23:14 by yoograme         ###   ########.fr       */
+/*   Updated: 2026/10/25 16:24:45 by yoograme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,11 @@ int	ft_isdigit(int c)
 //     printf ("%d",ft_isdigit(1));
 //     printf ("%d",ft_isdigit('2'));
 // }
+
+
+int main ()
+{
+	int x = 4;
+	int *nb = malloc (10);
+	nb = &x;
+}

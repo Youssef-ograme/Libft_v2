@@ -3,13 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoograme <yoograme@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yoograme <yoograme@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 16:59:17 by yoograme          #+#    #+#             */
-/*   Updated: 2026/10/24 10:37:40 by yoograme         ###   ########.fr       */
+/*   Updated: 2026/10/25 16:20:36 by yoograme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include "libft.h"
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
@@ -28,7 +29,6 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		temp = temp->next;
 	temp->next = new;
 }
-
 // void printf_list(t_list *node)
 // {
 //     if(!node)
@@ -36,7 +36,6 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 //     printf("%d\n", *(int *)node->content);
 //     printf_list(node->next);
 // }
-
 // void free_list (t_list *head)
 // {
 //     if (!head)
@@ -68,12 +67,13 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 //     node5 -> next = node6;
 //     node6 -> next = node7;
 //     node7 -> next = NULL;
-
 //     head = node1;
 //     //--
 //     int nb = 100;
 //     t_list *node = ft_lstnew(&nb);
-//     ft_lstadd_back(&head , node);
+//     head = NULL;
+// 	node = NULL;
+// 	ft_lstadd_back(&head , node);
 //     printf_list(head);
 //     free_list(head);
-// }
+// }				

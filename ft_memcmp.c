@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoograme <yoograme@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yoograme <yoograme@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 16:49:25 by yoograme          #+#    #+#             */
-/*   Updated: 2026/10/23 14:39:56 by yoograme         ###   ########.fr       */
+/*   Updated: 2026/10/25 16:19:38 by yoograme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,10 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
-// int main ()
-// {
-//     char s1[] = "ABA";
-//     char s2[] = "ABZ";
-//     int res = ft_memcmp(s1, s2 , 2);
-//     printf ("%d",res);
-// }
+// #include <stdio.h>
+// #include <string.h>
+//  int main ()
+//  {   
+//      int res = memcmp("HELLOz", "HelloZ" , 6);
+//      printf ("%d",res);
+//  }

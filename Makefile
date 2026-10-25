@@ -1,8 +1,8 @@
 NAME = libft.a
 CC = cc
 CFALGS = -Wall -Wextra -Werror
-AR = ar -rsc
-RM = rm -rf
+AR = ar rsc
+RM = rm -f
 SRCS = ft_isalpha.c \
 	ft_isdigit.c \
 	ft_isalnum.c \

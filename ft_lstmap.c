@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoograme <yoograme@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yoograme <yoograme@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 16:58:58 by yoograme          #+#    #+#             */
-/*   Updated: 2026/10/24 10:45:21 by yoograme         ###   ########.fr       */
+/*   Updated: 2026/10/25 16:13:04 by yoograme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	void	*content;
 
 	new_head = NULL;
-	if (!f || !lst || !del)
+	if (!f || !lst)
 		return (NULL);
 	while (lst)
 	{

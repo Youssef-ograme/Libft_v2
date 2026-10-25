@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yoograme <yoograme@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yoograme <yoograme@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 16:49:42 by yoograme          #+#    #+#             */
-/*   Updated: 2026/10/22 17:25:01 by yoograme         ###   ########.fr       */
+/*   Updated: 2026/10/25 16:13:33 by yoograme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,3 @@ void	ft_putstr_fd(char *s, int fd)
 	while (s[i])
 		ft_putchar_fd(s[i++], fd);
 }
-
-// int main ()
-// {
-//     int fd = open("file.txt",O_WRONLY);
-//     char str[] = "hello";
-//     ft_putstr_fd(str , fd);
-// }
