@@ -6,7 +6,7 @@
 /*   By: yoograme <yoograme@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 16:50:02 by yoograme          #+#    #+#             */
-/*   Updated: 2026/10/25 16:13:47 by yoograme         ###   ########.fr       */
+/*   Updated: 2026/10/29 15:50:07 by yoograme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	int		i;
+	size_t	i;
 	char	*ptr;
 
 	if (!s || !f)
@@ -31,10 +31,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	ptr[i] = '\0';
 	return (ptr);
 }
-/*
-int	main(void)
-{
-	char str[] = "hello";
-	char *res = ft_strmapi(str, &f);
-	printf("%s", res);
-}*/

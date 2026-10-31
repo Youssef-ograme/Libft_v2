@@ -6,7 +6,7 @@
 /*   By: yoograme <yoograme@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 16:49:54 by yoograme          #+#    #+#             */
-/*   Updated: 2026/10/25 16:13:42 by yoograme         ###   ########.fr       */
+/*   Updated: 2026/10/29 15:30:21 by yoograme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	len_src;
 	size_t	i;
 
-	if (!dst || !src)
-		return (0);
 	len_dest = ft_strlen(dst);
 	len_src = ft_strlen(src);
 	if (size <= len_dest)
@@ -33,17 +31,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[len_dest + i] = '\0';
 	return (len_dest + len_src);
 }
-
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	src[] = "brother";
-	char	dest[10] = "hello";
-	int		res;
-
-	res = ft_strlcat(dest, src, 8);
-	printf("%s , %d", dest, res);
-}
-*/

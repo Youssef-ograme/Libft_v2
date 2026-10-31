@@ -6,7 +6,7 @@
 /*   By: yoograme <yoograme@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 16:50:11 by yoograme          #+#    #+#             */
-/*   Updated: 2026/10/25 16:13:56 by yoograme         ###   ########.fr       */
+/*   Updated: 2026/10/29 15:50:38 by yoograme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	test_string(char c, const char *set)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (set[i])
@@ -51,9 +51,9 @@ static char	*check_ptr(void)
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*ptr;
-	int		start;
-	int		end;
-	int		i;
+	size_t	start;
+	size_t	end;
+	size_t	i;
 
 	if (!s1 || !set)
 		return (NULL);
@@ -76,13 +76,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ptr[i] = '\0';
 	return (ptr);
 }
-
-/*
-int	main(void)
-{
-	char str[] = "\0";
-	char set[] = "xl ";
-	// size_t len = len_string(str ,set);
-	char *res = ft_strtrim(str, set);
-	printf("res :%s", res); // res:
-}*/

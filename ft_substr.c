@@ -6,7 +6,7 @@
 /*   By: yoograme <yoograme@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 16:50:13 by yoograme          #+#    #+#             */
-/*   Updated: 2026/10/25 16:13:58 by yoograme         ###   ########.fr       */
+/*   Updated: 2026/10/29 15:50:41 by yoograme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,14 +37,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ptr[i] = '\0';
 	return (ptr);
 }
-
-/* #include<stdio.h>
-int	main(void)
-{
-	char	str[] = "brotherhello";
-	char	*tar;
-
-	tar = ft_substr(str, 34, 56);
-	printf("%s", tar);
-}
-*/

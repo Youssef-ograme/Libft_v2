@@ -6,7 +6,7 @@
 /*   By: yoograme <yoograme@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 16:49:42 by yoograme          #+#    #+#             */
-/*   Updated: 2026/10/25 16:13:33 by yoograme         ###   ########.fr       */
+/*   Updated: 2026/10/29 11:40:43 by yoograme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;
 
+	if (!s)
+		return ;
 	i = 0;
 	while (s[i])
 		ft_putchar_fd(s[i++], fd);

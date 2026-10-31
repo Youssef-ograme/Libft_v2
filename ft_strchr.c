@@ -6,7 +6,7 @@
 /*   By: yoograme <yoograme@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 16:49:46 by yoograme          #+#    #+#             */
-/*   Updated: 2026/10/25 16:13:35 by yoograme         ###   ########.fr       */
+/*   Updated: 2026/10/29 15:11:01 by yoograme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,30 +14,13 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int					i;
-	const unsigned char	*s1;
-	unsigned char		c1;
-
-	if (!s)
-		return (NULL);
-	i = 0;
-	s1 = (const unsigned char *)s;
-	c1 = (unsigned char)c;
-	while (s1[i])
+	while (*s)
 	{
-		if (s1[i] == c1)
-			return ((char *)&s1[i]);
-		i++;
+		if (*(char *)s == (char)c)
+			return ((char *)s);
+		s++;
 	}
-	if (s1[i] == c1)
-		return ((char *)&s1[i]);
+	if (*(char *)s == (char)c)
+		return ((char *)s);
 	return (NULL);
 }
-
-// #include <stdio.h>
-// int main ()
-// {
-//     char str[] = "hello";
-//     char *res = ft_strchr(NULL, 'é');
-//     printf("%s",res);
-// }

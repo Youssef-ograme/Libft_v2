@@ -6,7 +6,7 @@
 /*   By: yoograme <yoograme@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 09:14:39 by yoograme          #+#    #+#             */
-/*   Updated: 2026/10/25 17:08:01 by yoograme         ###   ########.fr       */
+/*   Updated: 2026/10/29 15:48:16 by yoograme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,3 @@ int	ft_isdigit(int c)
 		return (0);
 	return (1);
 }
-// #include <stdio.h>
-// int main()
-// {
-//     printf ("%d",ft_isdigit(1));
-//     printf ("%d",ft_isdigit('2'));
-// }

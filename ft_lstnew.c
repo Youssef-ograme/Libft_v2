@@ -6,7 +6,7 @@
 /*   By: yoograme <yoograme@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 16:59:27 by yoograme          #+#    #+#             */
-/*   Updated: 2026/10/25 16:13:07 by yoograme         ###   ########.fr       */
+/*   Updated: 2026/10/29 15:48:56 by yoograme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,14 +23,3 @@ t_list	*ft_lstnew(void *content)
 	node->next = NULL;
 	return (node);
 }
-/*
-int main ()
-{
-	char	c;
-	t_list	*node;
-
-	c = 'c';
-	node = ft_lstnew(&c);
-	printf ("%c",*(int *)node -> content);
-}
-*/

@@ -2,7 +2,7 @@ NAME = libft.a
 CC = cc
 CFALGS = -Wall -Wextra -Werror
 AR = ar rsc
-RM = rm -f
+RM = rm -rf
 SRCS = ft_isalpha.c \
 	ft_isdigit.c \
 	ft_isalnum.c \
@@ -48,8 +48,8 @@ SRCS = ft_isalpha.c \
 	ft_lstmap.c
 
 OBJCT = $(SRCS:.c=.o)
-all : $(NAME)
 
+all : $(NAME)
 $(NAME):$(OBJCT)
 	$(AR) $(NAME) $(OBJCT)
 
@@ -57,10 +57,11 @@ $(NAME):$(OBJCT)
 	$(CC) $(CFALGS) -c $< -o $@
 
 clean:
-	$(RM) *.o
-fclean:clean
+	$(RM) $(OBJCT)
+
+fclean: clean
 	$(RM) $(NAME)
 
 re: fclean all
+
 .PHONY: all clean fclean re	
-	

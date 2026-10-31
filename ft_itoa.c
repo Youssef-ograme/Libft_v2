@@ -6,7 +6,7 @@
 /*   By: yoograme <yoograme@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 16:49:21 by yoograme          #+#    #+#             */
-/*   Updated: 2026/10/25 16:12:47 by yoograme         ###   ########.fr       */
+/*   Updated: 2026/10/29 15:48:24 by yoograme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,9 @@ char	*ft_itoa(int n)
 	long	nb;
 
 	nb = n;
-	len = count_n(n);
 	if (nb == 0)
 		return (ft_strdup("0"));
+	len = count_n(nb);
 	ptr = malloc(len + 1);
 	if (!ptr)
 		return (NULL);
@@ -60,10 +60,3 @@ char	*ft_itoa(int n)
 	}
 	return (ptr);
 }
-/*
-int	main(void)
-{
-	char *res = ft_itoa(0);
-	printf("%s", res);
-	free(res);
-}*/

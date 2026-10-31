@@ -6,7 +6,7 @@
 /*   By: yoograme <yoograme@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 16:48:27 by yoograme          #+#    #+#             */
-/*   Updated: 2026/10/25 16:18:13 by yoograme         ###   ########.fr       */
+/*   Updated: 2026/10/29 15:04:12 by yoograme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	unsigned char		*d;
 	const unsigned char	*s;
 
-	if (!dest && !src)
-		return (NULL);
-	if (src == dest || n == 0)
-		return (dest);
 	d = (unsigned char *)dest;
 	s = (const unsigned char *)src;
 	i = 0;

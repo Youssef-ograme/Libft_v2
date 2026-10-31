@@ -6,7 +6,7 @@
 /*   By: yoograme <yoograme@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 16:49:50 by yoograme          #+#    #+#             */
-/*   Updated: 2026/10/25 16:13:39 by yoograme         ###   ########.fr       */
+/*   Updated: 2026/10/29 15:49:42 by yoograme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,10 +32,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
-/*
-int	main(void)
-{
-	char str[] = "hello";
-	ft_striteri(str, &f);
-	printf("%s", str);
-}*/

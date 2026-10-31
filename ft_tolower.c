@@ -6,7 +6,7 @@
 /*   By: yoograme <yoograme@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 16:50:15 by yoograme          #+#    #+#             */
-/*   Updated: 2026/10/25 16:14:00 by yoograme         ###   ########.fr       */
+/*   Updated: 2026/10/29 15:50:44 by yoograme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,3 @@ int	ft_tolower(int c)
 		return (c += 32);
 	return (c);
 }
-
-// int main ()
-// {
-//     unsigned char c = ft_tolower('M');
-//     printf ("%c",c);
-// }

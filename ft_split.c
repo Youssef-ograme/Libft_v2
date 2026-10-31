@@ -6,7 +6,7 @@
 /*   By: yoograme <yoograme@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 16:49:44 by yoograme          #+#    #+#             */
-/*   Updated: 2026/10/25 16:13:34 by yoograme         ###   ########.fr       */
+/*   Updated: 2026/10/29 15:49:30 by yoograme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ static size_t	ft_strlen_2(const char *s, char c)
 static size_t	ft_word_count(const char *s, char c)
 {
 	size_t	count;
-	int		in_word;
+	size_t	in_word;
 
 	count = 0;
 	in_word = 0;
@@ -101,112 +101,3 @@ char	**ft_split(char const *s, char c)
 	result[j] = NULL;
 	return (result);
 }
-
-// #include <stdio.h>
-// int main ()
-// {
-//     char str[] = "hello brother man";
-//     char **res = ft_split(str , ' ');
-//     int i = 0;
-//     while (res[i])
-//         printf("%s\n",res[i++]);
-//     i = 0;
-//     while (res[i])
-//         free(res[i++]);
-//     free (res);
-// }
-
-/*
-#include "libft.h"
-
-// "hello brother man"
-static size_t	ft_strlen_2(const char *s, char c)
-{
-	size_t	i;
-
-	i = 0;
-	while (s[i] && s[i] != c)
-		i++;
-	return (i);
-}
-
-static char	*ft_strdup_2(const char *s, char c)
-{
-	int		i;
-	char	*ptr;
-
-	ptr = malloc(ft_strlen_2(s, c) + 1);
-	if (!ptr)
-		return (NULL);
-	i = 0;
-	while (s[i] && s[i] != c)
-	{
-		ptr[i] = s[i];
-		i++;
-	}
-	ptr[i] = '\0';
-	return (ptr);
-}
-
-static int	len_world(const char *str, char c)
-{
-	int	i;
-	int	count;
-	int	new_world;
-
-	if (!str)
-		return (0);
-	new_world = 1;
-	count = 0;
-	i = 0;
-	while (str[i])
-	{
-		if (str[i] != c && new_world)
-		{
-			count++;
-			new_world = 0;
-		}
-		else if (str[i] == c)
-			new_world = 1;
-		i++;
-	}
-	return (count);
-}
-
-static void	free_(char **stack, int k)
-{
-	while (k > 0)
-		free(stack[--k]);
-	free(stack);
-}
-
-char	**ft_split(char const *s, char c)
-{
-	int		k;
-	char	**stack;
-	int		i;
-
-	if (!s)
-		return (NULL);
-	i = 0;
-	k = 0;
-	stack = malloc((len_world(s, c) + 1) * sizeof(char *));
-	if (!stack)
-		return (NULL);
-	while (s[i])
-	{
-		while (s[i ]&& s[i] == c)
-			i++;
-		stack[k] = ft_strdup_2(&s[i], c);
-		if (!stack[k++])
-		{
-			free_(stack, k - 1);
-			return (NULL);
-		}
-		i += ft_strlen_2(&s[i], c);
-	}
-	stack[k] = NULL;
-	return (stack);
-}
-
-*/
